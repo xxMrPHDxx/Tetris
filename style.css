@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: -webkit-fill-available;
+	background: #02020e;
+	text-align: center;
+}
+.player {
+	border: 3px solid white;
+	padding: 20px;
+    display: grid;
+    grid-template-areas: 	"score highscore"
+    						"canvas highscore";
+}
+.Score {
+	grid-area: score;
+	color: white;
+    font-size: -webkit-xxx-large;
+    font-family: fantasy;
+    margin: 20px;
+	font-variant-caps: small-caps;
+}
+canvas {
+	grid-area: canvas;
+	border: 2px solid white;
+}
+.HighScoreList {
+	grid-area: highscore;
+	color: white;
+	font-variant: petite-caps;
+	margin: -20px 20px;
+	padding-left: 30px;
+	border-left: 3px solid;
+	border-left-style: double;
+    display: grid;
+    align-items: center;
+}
